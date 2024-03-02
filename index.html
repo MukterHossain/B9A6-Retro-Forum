@@ -1,18 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro Forum</title>
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- tailwind and daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header class="w-5/6 m-auto mt-8">
+        <div class="navbar bg-base-100">
+            <div class="flex-1">
+              <a class="text-3xl text-[#12132d] font-bold">ReTro</a>
+            </div>
+            <div class="flex-none gap-2">
+              <div class="flex justify-end items-center">
+                <ul class="flex justify-end items-center gap-3 lg:gap-6 mr-4 lg:mr-8">
+                    <li><i class="fa-solid fa-house bg-[#edebeb] p-4 rounded-full"></i></li>
+                    <li><i class="fa-solid fa-pen bg-[#edebeb] p-4 rounded-full"></i></li>
+                    <li><i class="fa-solid fa-user-plus bg-[#edebeb] p-4 rounded-full"></i></li>
+                    <li><i class="fa-regular fa-flag bg-[#edebeb] p-4 rounded-full"></i></li>
+                </ul>
+                <button class=" bg-[#787dfb] py-1 px-5 lg:px-8 text-xl lg:text-2xl text-white rounded-3xl">Sign in</button>
+                
+              </div>
+          </div>
+    </header>
+
+    <main class="w-5/6 m-auto mt-8">
+
+        <section>
+            <div class="w-full rounded-2xl bg-cover phone-6 bg-[url('images/bgbanner.png')]">
+               <div class="bg-[#242a56] rounded-2xl w-full h-full opacity-40">
+                <div class="lg:flex lg:justify-between p-16 gap-12">
+                    <div class="flex-1">
+                        <div class="">
+                            <h1 class="text-white text-5xl font-bold">Welcome to the <br><span class="text-indigo-500">ReTro Forum</span></h1>
+                            <p class="text-lg text-white py-3">  Share your favorite opinion and enjoy to Forum <br>  with clients!  </p>
+                        </div>
+                        <div class="bg-white py-1 px-3 w-full lg:w-4/5 rounded-3xl flex justify-between items-center">
+                            <input type="text" placeholder="Search here anything">
+                             <button class=" bg-[#787dfb]  px-2 lg:px-8 text-xl lg:text-2xl text-white rounded-3xl">Sign in</button>
+                        </div>
+                    </div>
+                    
+                    <div class="count-text flex-1 w-full mt-8 lg:mt-0 lg:w-3/5 bg-white rounded-2xl p-12 ">
+                        <div class="flex justify-between items-center">
+                            <p>Registered Users</p>
+                            <p>01</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p >Forum</p>
+                            <p>02</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p>Topics</p>
+                            <p>03</p>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <p>Replies</p>
+                            <p>04</p>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </section>
+
+    </main>
     
 
 
-
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/6ccbb48cb8.js" crossorigin="anonymous"></script>
+    <!-- js -->
     <script src="js/api.js"></script>
 </body>
 </html>
