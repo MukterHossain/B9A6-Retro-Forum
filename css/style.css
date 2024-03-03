@@ -15,3 +15,8 @@ p{
     font-size: 20px;
     font-family: "Mulish", sans-serif;
 }
+
+.discuss-count i,span{
+    color:#12132d;
+    opacity:.6;
+}
