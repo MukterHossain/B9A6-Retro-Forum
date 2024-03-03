@@ -1,5 +1,6 @@
 
 const loadCategory = async () =>{
+    document.getElementById('loading-spiner').style.display = 'block';
     const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
     const data = await res.json();
 
@@ -7,7 +8,7 @@ const loadCategory = async () =>{
     const discussContainer = document.getElementById('discuss-container');
     // discussContainer.innerHTML = '';
     data.posts.forEach((item)=>{
-        
+        document.getElementById('loading-spiner').style.display = 'none';
         const div = document.createElement('div');
         div.classList.add('discussCard')
         div.innerHTML = `
@@ -100,7 +101,7 @@ const loadAllPost= async () =>{
             </div>
             <div class="flex gap-4 mt-3 text-xl text-center text-[#12132d] opacity-70">
                 <i class="fa-regular fa-calendar-minus"></i>
-                <span class="">${item.author.posted_date}</span>
+                <span class="">${item.author.posted_date?item.author.posted_date:"No publish date"}</span> 
             </div>
             <div class="">
               <h2 class="text-[#12132d] text-[18px]  font-bold py-3">${item.title}</h2>
@@ -111,7 +112,7 @@ const loadAllPost= async () =>{
                 </div>
                 <div>
                     <h3 class="text-[#12132d] text-[16px]  font-bold">${item.author.name}</h3>
-                    <p class=" text-sm text-[#12132d] opacity-70">${item.author.designation}</p>
+                    <p class=" text-sm text-[#12132d] opacity-70">${item.author.designation?item.author.designation:"Unknown"}</p>
                 </div>
               </div>
             </div>

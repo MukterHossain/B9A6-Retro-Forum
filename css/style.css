@@ -79,13 +79,16 @@ img{
     align-items: center;
     gap:25px
 }
-/* .post-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap:25px
-} */
+
+.loading-spiner{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    padding: 50px;
+    display: none;
+}
+
+
   
 
 
