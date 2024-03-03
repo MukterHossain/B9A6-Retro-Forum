@@ -15,6 +15,9 @@ p{
     font-size: 20px;
     font-family: "Mulish", sans-serif;
 }
+img{
+    max-width: 100%;
+}
 
 .discuss-count i,span{
     color:#12132d;
