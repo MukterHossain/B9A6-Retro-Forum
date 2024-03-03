@@ -23,3 +23,82 @@ img{
     color:#12132d;
     opacity:.6;
 }
+
+.discuss-main{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    gap:16px; 
+}
+.discuss-container{
+    display: flex;
+    width: 62%;
+    flex-direction: column;
+    gap:16px;
+
+}
+.discussCard{
+    display: flex;
+    background:#ebebf2 ;
+    border:2px solid #dedfea;
+    border-radius: 16px;
+    padding:50px;
+    gap:20px;
+}
+.discussCard:hover{
+    border:2px solid #5b5c68;
+    border-radius: 16px;
+    padding:50px;
+    box-shadow: 0px 4px 5px #73747d;
+}
+
+.discuss-right-count{
+    width: 30%;
+    background:#dedfea ;
+    border:2px solid #dedfea;
+    border-radius: 16px;
+    padding:20px;
+}
+
+.discuss-right-count:hover{
+    border:2px solid #5b5c68;
+    border-radius: 16px;
+    box-shadow: 0px 4px 5px #73747d;
+}
+     
+
+
+
+@media only screen and (max-width:992px) {
+    
+}
+@media only screen and (max-width: 600px) {
+    .discuss-container{
+        flex-direction: column;
+    }
+
+    .discussCard{  
+        width: 100%;
+        padding:20px;
+    }
+
+    .discuss-right-count{
+        width: 100%;
+        padding:40px;
+    }
+
+    .discuss-main{
+        flex-direction: column;
+        align-items: center;
+        gap:16px; 
+    }
+    .discuss-container{
+        width: 100%;
+        gap:16px;
+    
+    }
+
+    .discuss-right-count{
+        width: 100%;
+    }
+}
