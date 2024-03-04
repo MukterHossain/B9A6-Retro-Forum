@@ -50,7 +50,7 @@ const loadCategory = async () =>{
 }
 
 
-//    discusslefts
+
 
 
 
@@ -59,9 +59,9 @@ const loadCategory = async () =>{
 const discussLeft = async () =>{
     const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
     const data = await res.json();
-    // const dataAll = data.posts;
+
     const discussLeftID = document.getElementById('discussLeftId');
-    // discussLeftID.innerHTML = '';
+
     data.posts.forEach((item)=>{
         const div = document.createElement('div');
         div.classList.add('discuss-left')
@@ -81,46 +81,6 @@ const discussLeft = async () =>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const discussLefts = async () =>{
-//     const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
-//     const data = await res.json();
-//     const dataAll = data.posts;
-//     console.log(dataAll)
-
-//     let count = 0;
-//     for(const btn of dataAll){
-//         console.log(btn)
-//     }
-
-//     // const discussLeftID = document.getElementById('discussLeftId');
-      
-
-// }
-
-
-
-
-
-
-
-
-// done 
 
 const loadAllPost= async () =>{
     const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/latest-posts');
